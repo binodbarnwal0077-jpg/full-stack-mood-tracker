@@ -1,0 +1,106 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.mood-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+}
+
+.mood-btn {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.mood-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mood-btn.selected {
+    border-color: #007bff;
+    background-color: #e6f2ff;
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box; /* Important for padding */
+    height: 80px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#save-btn {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#save-btn:hover {
+    background-color: #218838;
+}
+
+h2 {
+    margin-top: 2rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.log-entry {
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.log-entry h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+.log-entry p {
+    margin: 0 0 0.5rem 0;
+    font-style: italic;
+    color: #555;
+}
+
+.log-entry span {
+    font-size: 0.8rem;
+    color: #888;
+}
